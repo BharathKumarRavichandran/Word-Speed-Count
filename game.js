@@ -78,7 +78,7 @@ function wordCheck(){
             d2 = new Date();
             t2 = d2.getTime();
             t=t2-t1;// Time taken in milliseconds
-            speedDisplaySpan.innerHTML = (Math.round((len*1000/t)*10))/10;
+            speedDisplaySpan.innerHTML = ((Math.round((len*1000/t)*10))/10)+" character/second";
             test.style.backgroundColor = "blue";
             input.disabled=true;
             input.value="Successfully completed!";
