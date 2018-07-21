@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word Speed Count</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+	<h1>WORD SPEED COUNT</h1>
+	<div id="insHead">Instructions:</div>
+	<div id="ins">Type the paragraph below in the input space provided. The indicator box lights <span style="color: green;">GREEN</span> when you are typing correctly and lights <span style="color: red;">RED</span> if you are not and finally <span style="color: blue;">BLUE</span> color indicates that you finished typing correctly. Type it out as fast as you can with accuracy. Your typing speed will be displayed at the end. Click <b>START</b> to start the game.</div>
+	<button id="start" onclick="startTimer();">START</button>
+	<div id="timerText"></div>
+	<div id="paraHead">Paragraph to be typed:</div>
+	<div id="para">What if the depraved stress ate the belt? Did the probable telephone really announce the notice?</div>
+	<input id="input" disabled type="text" name="words" value="Type the above text!" onfocus="this.value=''" oninput="wordCheck()">
+	<input id="test" disabled type="text" name="color">
+	<div id="timeDisplay">Time Taken: <span id="timeDisplaySpan"></span></div>
+	<div id="speedDisplay">Your speed: <span id="speedDisplaySpan"></span></div>
+<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
